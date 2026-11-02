@@ -22,4 +22,27 @@
 ### 02_basics
 - 01_array.js
 - 02_objects.js
+### 03_basics
+- 01_functions.js
+- 02_scope.js
+- 03_this.js
+- 04_iife.js
+### 04_control_flow
+- 01_if_else.js
+- 02_switch.js
+- 03_truthy_falsy.js
+### 05_iteration
+- 01_forLoop.js
+- 02_whileLoop.js
+- 03_forOfLoop.js
+- 04_forInLoop.js
+- 05_forEachLoop.js
+- 06_filter.js
+- 07_map.js
+- 08_reduce.js
+### 06_DOM
+- 01_domIntro.html
+- 02_domNewElement.html
+- 03_domNode.html
+- 04_editAndRemove.html
 
