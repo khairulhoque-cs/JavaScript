@@ -45,4 +45,9 @@
 - 02_domNewElement.html
 - 03_domNode.html
 - 04_editAndRemove.html
+### 07_Projects
+- Project_01 (JavaScript Background color Switcher)
+- Project_02 (BMI Calculator)
+- Project_03 (Digital Clock)
+- Project_04 (Number Guessing Game)
 
