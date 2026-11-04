@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+</head>
+<body>
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li>
+                <img width="200px" height="200px" id="photoshop" src="https://images.pexels.com/photos/40541168/pexels-photo-40541168.jpeg" alt="photoshop">
+            </li>
+            <li>
+                <img width="200px" height="200px" id="walkInroad" src="https://images.pexels.com/photos/10615656/pexels-photo-10615656.jpeg" alt="photoshop">
+            </li>
+            <li>
+                <img width="200px" height="200px" id="walkInGurden" src="https://images.pexels.com/photos/27435824/pexels-photo-27435824.jpeg" alt="photoshop">
+            </li>
+            <li>
+                <img width="200px" height="200px" id="walkInForest" src="https://images.pexels.com/photos/19084565/pexels-photo-19084565.jpeg" alt="photoshop">
+            </li>
+            <li><a src="col" href="https://google.com" id="google">Google</a></li>
+        </ul>
+
+    </div>
+</body>
+<script>
+    // // Method 1
+    document.getElementById('walkInGurden').onclick = function() {
+        alert('walkInGurden clicked')
+    }
+
+    // type, timestamp, defaultPrevented, target,
+    // toElement, srcElement, currentTarget, clientX, clientY,
+    // screenX, screenY, altkey, ctrlkey, keyCode,
+
+    // Method 3 -> attachEvent()
+    // jQuery - on
+
+    // Method 2
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log('clicked inside the ul');
+
+    }, false)  // false-> bubling, true->capturing
+
+    document.getElementById('photoshop').addEventListener('click', function(e){
+        console.log('clicked first photo');
+        e.stopPropagation()
+    }, false)
+
+    document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault()
+        e.stopPropagation()
+        console.log("google clicked");
+    }, false)
+
+    // When click image then image invisible
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName == 'IMG') {
+            let removeIt = e.target.parentNode;
+            removeIt.remove()
+        }
+
+        // removeIt.parentNode.removeChild(removeIt)
+
+    }, false)
+
+</script>
+</html>
