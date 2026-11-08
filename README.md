@@ -50,4 +50,13 @@
 - Project_02 (BMI Calculator)
 - Project_03 (Digital Clock)
 - Project_04 (Number Guessing Game)
-
+- Project_05
+- Project_06
+- Project_07 (Random User Info)
+### 08_events
+- 01_eventInto.html
+- 02_async.html
+- 03_setInterval.html
+### 09_Advanced
+- 01_API.html
+- 02_Promise.js
