@@ -65,3 +65,9 @@
 - 02_oop.js
 - 03_Object.js
 - 04_Prototype.js
+- 05_call.js
+- 06_myClasses.js
+- 07_inheritance.js
+- 08_staticProp.js
+- 09_bind.html
+- 10_mathPI.js
