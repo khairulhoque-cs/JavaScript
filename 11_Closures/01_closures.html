@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure in JavaScript</title>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    // Lexical scoping
+    function init() {
+        let name = "Mozilla"; // name is a local variable created by init
+        function displayName() {
+            // displayName() is the inner function, that forms a closure
+            console.log(name); // use variable declared in the parent function
+        }
+        displayName();
+    }
+    init();
+
+    function outer() {
+        let username = "Bob@123";
+        console.log("SECRER:", secret);  // Uncaught ReferenceError: secret is not defined
+        
+        function inner() {
+            let secret = "my@123"
+            console.log("inner:", username);
+        }
+        function innerTwo() {
+            console.log("innerTwo:", username);
+            
+        }
+        inner();
+        innerTwo();
+    }
+
+    outer()
+    console.log("outer:", username);
+
+    // Closure
+    function makeFunc() {
+        const name = "Mozilla";
+        function displayName() {
+            console.log(name);
+        }
+        return displayName;
+    }
+
+    const myFunc = makeFunc();
+    myFunc();
+    
+</script>
+<script>
+    // Example of closures and Lexical scoping
+    // document.getElementById("orange").onclick = function() {
+    //     document.body.style.backgroundColor = 'orange'
+    // }
+
+    function clickHandler(color) {
+        // document.body.style.backgroundColor = `${color}`
+
+        return function() {
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+
+    document.getElementById("orange").onclick = clickHandler("orange");
+    document.getElementById("green").onclick = clickHandler("green");
+</script>
+</html>
