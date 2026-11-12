@@ -22,6 +22,7 @@
 ### 02_basics
 - 01_array.js
 - 02_objects.js
+- 03_advanced_array.js
 ### 03_basics
 - 01_functions.js
 - 02_scope.js
@@ -71,3 +72,6 @@
 - 08_staticProp.js
 - 09_bind.html
 - 10_mathPI.js
+- 11_getter_setter.js
+### 11_Closures
+- 01_closures.html
