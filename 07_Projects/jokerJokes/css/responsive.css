@@ -1,0 +1,228 @@
+
+/* ==============================
+   Tablet: 768px - 1024px
+================================= */
+
+@media screen and (max-width: 1024px) {
+
+    .page-shell {
+        max-width: 900px;
+        padding: 30px 35px;
+    }
+
+    .generator {
+        max-width: 700px;
+    }
+
+}
+
+
+/* ==============================
+   Tablet / Small Laptop
+================================= */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 20px 15px;
+        align-items: flex-start;
+    }
+
+    .page-shell {
+        min-height: calc(100vh - 40px);
+        padding: 25px;
+        border-radius: 25px;
+    }
+
+    .topbar {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .brand {
+        font-size: 24px;
+    }
+
+    .language-select {
+        min-width: 135px;
+    }
+
+    .generator {
+        margin: 40px auto 30px;
+    }
+
+    .generator-title {
+        font-size: 29px;
+    }
+
+    .joke-card {
+        min-height: 290px;
+        padding: 25px 20px;
+    }
+
+}
+
+
+/* ==============================
+   Mobile: 600px
+================================= */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .page-shell {
+        min-height: calc(100vh - 24px);
+        padding: 20px 15px;
+
+        border-radius: 20px;
+    }
+
+    /* Header */
+
+    .topbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 15px;
+        padding-bottom: 20px;
+    }
+
+    .brand {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .joke-type,
+    .language-control {
+        width: 100%;
+    }
+
+    .select-control {
+        width: 100%;
+        padding: 11px 30px 11px 10px;
+        font-size: 12px;
+        background-position: right 9px center;
+    }
+
+    /* Generator */
+
+    .generator {
+        margin: 30px auto 25px;
+    }
+
+    .generator-top {
+        grid-template-columns: 45px 1fr;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .heart-button {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    .generator-title {
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .topic-control {
+        grid-column: 1 / -1;
+        justify-self: stretch;
+        width: 100%;
+    }
+
+    .topic-select {
+        width: 100%;
+    }
+
+    /* Joke Card */
+
+    .joke-card {
+        min-height: 300px;
+        padding: 25px 15px;
+        border-radius: 20px;
+    }
+
+    .joke-meta {
+        margin-bottom: 25px;
+    }
+
+    .meta-chip {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+
+    .joke-setup {
+        font-size: 26px;
+    }
+
+    .joke-delivery {
+        font-size: 23px;
+    }
+
+    /* Navigation */
+
+    .joke-navigation {
+        gap: 12px;
+        margin-top: 22px;
+    }
+
+    .nav-button {
+        flex: 1;
+        min-width: 0;
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+
+    /* Footer */
+
+    .page-footer {
+        padding-top: 20px;
+    }
+
+}
+
+
+/* ==============================
+   Small Mobile: 380px
+================================= */
+
+@media screen and (max-width: 380px) {
+
+    .page-shell {
+        padding: 18px 12px;
+    }
+
+    .brand {
+        font-size: 23px;
+    }
+
+    .generator-title {
+        font-size: 23px;
+    }
+
+    .joke-card {
+        min-height: 280px;
+        padding: 20px 12px;
+    }
+
+    .joke-setup {
+        font-size: 23px;
+    }
+
+    .joke-delivery {
+        font-size: 21px;
+    }
+
+    .nav-button {
+        gap: 6px;
+        font-size: 12px;
+    }
+
+}

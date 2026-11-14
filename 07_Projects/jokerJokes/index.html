@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jokerJokes</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- JavaScript -->
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <main class="page-shell">
+
+        <header class="topbar">
+            <a href="#" class="brand" aria-label="jokerJokes home">
+                jokerJokes<span class="brand-dot">.</span>
+            </a>
+
+            <div class="joke-type">
+                <label for="jokeType" class="sr-only">
+                    Select joke type
+                </label>
+
+                <select id="jokeType" class="select-control">
+                    <option value="all">All Joke Types</option>
+                    <option value="single">Single</option>
+                    <option value="twopart">Two Part</option>
+                </select>
+            </div>
+
+            <div class="language-control">
+                <label for="languageSelect" class="sr-only">
+                    Select language
+                </label>
+
+                <select id="languageSelect" class="select-control language-select">
+                    <option value="en" selected>English</option>
+                    <option value="bn">Bengali</option>
+                    <option value="hi">Hindi</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </header>
+
+        <section class="generator" aria-labelledby="appTitle">
+            <div class="generator-top">
+                <button id="favoriteBtn" 
+                    class="heart-button"
+                    type="button"
+                    aria-label="Add joke to favourites"
+                    aria-pressed="false"
+                    title="Add to favourites"> ❤️
+                </button>
+
+                <h1 id="appTitle" class="generator-title">
+                    jokerJokes<span class="brand-dot">.</span>
+                </h1>
+
+                <div class="topic-control">
+
+                    <label for="categorySelect" class="sr-only">
+                        Select topic
+                    </label>
+
+                    <select id="categorySelect" class="select-control topic-select">
+                        <option value="any">Select Topic</option>
+                        <option value="funny">Funny</option>
+                        <option value="programming">Programming</option>
+                        <option value="dad">Dad Jokes</option>
+                        <option value="dark">Dark Humour</option>
+                        <option value="pun">Puns</option>
+                        <option value="knock-knock">Knock-knock</option>
+                        <option value="romantic">Romantic</option>
+                        <option value="sarcastic">Sarcastic</option>
+                        <option value="one-liner">One-liners</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                </div>
+            </div>
+
+            <article
+                id="jokeCard"
+                class="joke-card"
+                aria-live="polite"
+                aria-atomic="true"
+            >
+
+                <!-- Joke Information -->
+                <div class="joke-meta">
+
+                    <span id="jokeCategory" class="meta-chip">
+                        Random joke
+                    </span>
+
+                    <span id="jokeLanguage" class="meta-chip">
+                        English
+                    </span>
+
+                </div>
+
+                <!-- Joke Content -->
+                <div class="joke-content">
+
+                    <p id="jokeSetup" class="joke-setup">
+                        Your next laugh is just one click away!
+                    </p>
+
+                    <p id="jokeDelivery" class="joke-delivery"></p>
+
+                </div>
+
+                <!-- Status Message -->
+                <p
+                    id="statusMessage"
+                    class="status-message"
+                    role="status"
+                ></p>
+            </article>
+            
+            <nav class="joke-navigation" aria-label="Joke navigation">
+                <!-- Previous Joke -->
+                <button
+                    id="previousBtn"
+                    class="nav-button previous-button"
+                    type="button"
+                >
+                    <span aria-hidden="true">←</span>
+                    <span>Previous</span>
+                </button>
+
+                <!-- Next Joke -->
+                <button
+                    id="generateBtn"
+                    class="nav-button next-button"
+                    type="button"
+                >
+                    <span>Next</span>
+                    <span aria-hidden="true">→</span>
+                </button>
+            </nav>
+
+        </section>
+
+        <footer class="page-footer">
+            <p>
+                Made for smiles, one joke at a time
+                <span aria-hidden="true">😊</span>
+            </p>
+        </footer>
+
+    </main>
+</body>
+</html>
