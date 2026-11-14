@@ -5,7 +5,7 @@
 
 ## 📖 About
 <p>
-  This repository documents my journey of learning JavaScript, covering fundamental concepts, practical examples, and coding exercises. My   goal is to strengthen my programming skills, improve my problem-solving abilities, and build a solid foundation for full-stack web        development.
+  This repository documents my journey of learning JavaScript, covering fundamental concepts, practical examples, and coding exercises. My goal is to strengthen my programming skills, improve my problem-solving abilities, and build a solid foundation for full-stack web development.
 </p>
 
 ## 📂Folder and File Structure (INDEX)
@@ -54,6 +54,8 @@
 - Project_05
 - Project_06
 - Project_07 (Random User Info)
+- jokerJokes (Random Jokes APP)
+- textToVoice (Text to Voice Converter)
 ### 08_events
 - 01_eventInto.html
 - 02_async.html
